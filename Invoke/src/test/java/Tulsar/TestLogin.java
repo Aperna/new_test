@@ -50,7 +50,7 @@ public class TestLogin {
     @Test
     public void userInRegistration() {
         driver.findElement(By.linkText("Register")).click();
-        driver.findElement(By.id("gender-male")).click();
+        driver.findElement(By.id("gender-female")).click();
         driver.findElement(By.id("FirstName")).sendKeys("chine");
         driver.findElement(By.id("LastName")).sendKeys("west");
         Select dropdown = new Select(driver.findElement(By.name("DateOfBirthDay")));
